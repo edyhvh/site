@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useLanguage } from '@/hooks/useLanguage';
+import { useLanguage } from "@/hooks/useLanguage";
 
 // Inline SVG icons for reliability
 const GithubIcon = () => (
@@ -116,12 +116,12 @@ export function Header() {
   const { t } = useLanguage();
 
   const socialLinks: SocialLink[] = [
-    { icon: GithubIcon, href: 'https://github.com/edyhvh', label: 'GitHub' },
-    { icon: TelegramIcon, href: 'https://t.me/edyhvh', label: 'Telegram' },
-    { icon: XIcon, href: 'https://x.com/edyhvh', label: 'X' },
-    { icon: SpotifyIcon, label: 'Spotify' },
-    { icon: AppleMusicIcon, label: 'Apple Music' },
-    { icon: YouTubeMusicIcon, label: 'YouTube Music' },
+    { icon: GithubIcon, href: "https://github.com/edyhvh", label: "GitHub" },
+    { icon: TelegramIcon, href: "https://t.me/edyhvh", label: "Telegram" },
+    { icon: XIcon, href: "https://x.com/edyhvh", label: "X" },
+    { icon: SpotifyIcon, label: "Spotify" },
+    { icon: AppleMusicIcon, label: "Apple Music" },
+    { icon: YouTubeMusicIcon, label: "YouTube Music" },
   ];
 
   return (

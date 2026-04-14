@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useLanguage } from '@/hooks/useLanguage';
+import { useLanguage } from "@/hooks/useLanguage";
 
 const GithubIcon = () => (
   <svg
@@ -30,19 +30,27 @@ export function Art() {
 
   const artItems = [
     {
-      name: '4s4f',
+      name: "4s4f",
       description: t.artDescriptions.music,
-      url: 'https://suno.com/@4s4f',
+      url: "https://suno.com/@4s4f",
       links: [
-        { label: 'GitHub', href: 'https://github.com/edyhvh/4s4f', icon: GithubIcon },
+        {
+          label: "GitHub",
+          href: "https://github.com/edyhvh/4s4f",
+          icon: GithubIcon,
+        },
       ] as ArtLink[],
     },
     {
-      name: 'shaul',
+      name: "shaul",
       description: t.artDescriptions.bible,
-      url: 'https://shaul.vercel.app',
+      url: "https://shaul.vercel.app",
       links: [
-        { label: 'GitHub', href: 'https://github.com/edyhvh/shaul', icon: GithubIcon },
+        {
+          label: "GitHub",
+          href: "https://github.com/edyhvh/shaul",
+          icon: GithubIcon,
+        },
       ] as ArtLink[],
     },
   ];

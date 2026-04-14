@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useLanguage } from '@/hooks/useLanguage';
+import { useLanguage } from "@/hooks/useLanguage";
 
 // Inline GitHub icon
 const GithubIcon = () => (
@@ -33,29 +33,29 @@ export function Projects() {
 
   const projects: Project[] = [
     {
-      name: 'davar.bible',
+      name: "davar.bible",
       description: t.projectDescriptions.davar,
-      url: 'https://davar.bible',
-      githubUrl: 'https://github.com/edyhvh/davar',
+      url: "https://davar.bible",
+      githubUrl: "https://github.com/edyhvh/davar",
       isWip: false,
     },
     {
-      name: 'shafan.xyz',
+      name: "shafan.xyz",
       description: t.projectDescriptions.shafan,
-      url: 'https://shafan.xyz',
-      githubUrl: 'https://github.com/edyhvh/shafan',
+      url: "https://shafan.xyz",
+      githubUrl: "https://github.com/edyhvh/shafan",
       isWip: false,
     },
     {
-      name: 'nave',
+      name: "nave",
       description: t.projectDescriptions.nave,
-      githubUrl: 'https://github.com/edyhvh/nave',
+      githubUrl: "https://github.com/edyhvh/nave",
       isWip: true,
     },
     {
-      name: 'qahal',
+      name: "qahal",
       description: t.projectDescriptions.qahal,
-      githubUrl: 'https://github.com/edyhvh/qahal',
+      githubUrl: "https://github.com/edyhvh/qahal",
       isWip: true,
     },
   ];
