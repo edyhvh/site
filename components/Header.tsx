@@ -53,13 +53,75 @@ const XIcon = () => (
   </svg>
 );
 
+const SpotifyIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.8"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <circle cx="12" cy="12" r="10" />
+    <path d="M7.5 10.5c3.6-1.2 6.8-.9 9.6.8" />
+    <path d="M8.3 13.4c2.7-.9 5.1-.7 7.1.6" />
+    <path d="M9.2 16.1c1.8-.6 3.4-.5 4.8.3" />
+  </svg>
+);
+
+const AppleMusicIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.7"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M16 4v11.5a2.5 2.5 0 1 1-1.5-2.29V7.9L8 9.1v8.4A2.5 2.5 0 1 1 6.5 15.2V6.9L16 4z" />
+  </svg>
+);
+
+const YouTubeMusicIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.7"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <circle cx="12" cy="12" r="9" />
+    <circle cx="12" cy="12" r="3" />
+    <path d="M10.8 10.4l3 1.6-3 1.6v-3.2z" fill="currentColor" stroke="none" />
+  </svg>
+);
+
+type SocialLink = {
+  icon: () => React.JSX.Element;
+  label: string;
+  href?: string;
+};
+
 export function Header() {
   const { t } = useLanguage();
 
-  const socialLinks = [
+  const socialLinks: SocialLink[] = [
     { icon: GithubIcon, href: 'https://github.com/edyhvh', label: 'GitHub' },
     { icon: TelegramIcon, href: 'https://t.me/edyhvh', label: 'Telegram' },
     { icon: XIcon, href: 'https://x.com/edyhvh', label: 'X' },
+    { icon: SpotifyIcon, label: 'Spotify' },
+    { icon: AppleMusicIcon, label: 'Apple Music' },
+    { icon: YouTubeMusicIcon, label: 'YouTube Music' },
   ];
 
   return (
@@ -68,18 +130,29 @@ export function Header() {
         {t.greeting}
       </h1>
       <div className="flex gap-4">
-        {socialLinks.map(({ icon: Icon, href, label }) => (
-          <a
-            key={label}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-black hover:opacity-60 transition-opacity"
-            aria-label={label}
-          >
-            <Icon />
-          </a>
-        ))}
+        {socialLinks.map(({ icon: Icon, href, label }) =>
+          href ? (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black hover:opacity-60 transition-opacity"
+              aria-label={label}
+            >
+              <Icon />
+            </a>
+          ) : (
+            <span
+              key={label}
+              className="text-black"
+              aria-label={`${label} (no URL yet)`}
+              title={`${label} (no URL yet)`}
+            >
+              <Icon />
+            </span>
+          ),
+        )}
       </div>
     </header>
   );

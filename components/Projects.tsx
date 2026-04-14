@@ -55,6 +55,7 @@ export function Projects() {
     {
       name: 'qahal',
       description: t.projectDescriptions.qahal,
+      githubUrl: 'https://github.com/edyhvh/qahal',
       isWip: true,
     },
   ];
@@ -65,6 +66,7 @@ export function Projects() {
       <ul className="space-y-4">
         {projects.map((project) => (
           <li key={project.name} className="flex items-center gap-3">
+            <span>—</span>
             <span className="text-black">
               {project.url ? (
                 <a
