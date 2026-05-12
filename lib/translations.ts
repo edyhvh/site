@@ -1,4 +1,4 @@
-export type Language = 'en' | 'es';
+export type Language = "en" | "es";
 
 export type Translations = {
   greeting: string;
@@ -7,9 +7,9 @@ export type Translations = {
   art: string;
   projectDescriptions: {
     davar: string;
-    shafan: string;
     nave: string;
     qahal: string;
+    car: string;
   };
   educationItem: string;
   artDescriptions: {
@@ -17,55 +17,58 @@ export type Translations = {
     bible: string;
   };
   wip: string;
+  privateLabel: string;
 };
 
 export const translations: Record<Language, Translations> = {
   en: {
-    greeting: 'hello friend',
-    projects: 'PROJECTS',
-    education: 'EDUCATION',
-    art: 'ART',
+    greeting: "hello friend",
+    projects: "PROJECTS",
+    education: "EDUCATION",
+    art: "ART",
     projectDescriptions: {
-      davar: 'bible app',
-      shafan: 'bible app for advance learners',
-      nave: 'trading copilot',
-      qahal: '',
+      davar: "bible app",
+      nave: "trading copilot",
+      qahal: "find people in the emunah close to you",
+      car: "long distance ride sharing",
     },
-    educationItem: 'Major in Business Administration',
+    educationItem: "Major in Business Administration",
     artDescriptions: {
-      music: 'making music with AI',
-      bible: 'learning about the bible and doing midrash',
+      music: "making music with AI",
+      bible: "learning about the bible and doing midrash",
     },
-    wip: '[wip]',
+    wip: "[wip]",
+    privateLabel: "private",
   },
   es: {
-    greeting: 'hola amigo',
-    projects: 'PROYECTOS',
-    education: 'EDUCACIÓN',
-    art: 'ARTE',
+    greeting: "hola amigo",
+    projects: "PROYECTOS",
+    education: "EDUCACIÓN",
+    art: "ARTE",
     projectDescriptions: {
-      davar: 'app de biblia',
-      shafan: 'app de biblia para estudiantes avanzados',
-      nave: 'copiloto de trading',
-      qahal: '',
+      davar: "app de biblia",
+      nave: "copiloto de trading",
+      qahal: "encuentra personas en la emunah cerca de ti",
+      car: "ride sharing de larga distancia",
     },
-    educationItem: 'Licenciatura en Administración de Empresas',
+    educationItem: "Licenciatura en Administración de Empresas",
     artDescriptions: {
-      music: 'haciendo música con IA',
-      bible: 'aprendiendo sobre la biblia y haciendo midrash',
+      music: "haciendo música con IA",
+      bible: "aprendiendo sobre la biblia y haciendo midrash",
     },
-    wip: '[en desarrollo]',
+    wip: "[en desarrollo]",
+    privateLabel: "privado",
   },
 };
 
 export function detectLanguage(): Language {
-  if (typeof window === 'undefined') return 'en';
-  
+  if (typeof window === "undefined") return "en";
+
   const browserLang = navigator.language.toLowerCase();
-  
-  if (browserLang.startsWith('es')) {
-    return 'es';
+
+  if (browserLang.startsWith("es")) {
+    return "es";
   }
-  
-  return 'en';
+
+  return "en";
 }

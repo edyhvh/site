@@ -119,9 +119,17 @@ export function Header() {
     { icon: GithubIcon, href: "https://github.com/edyhvh", label: "GitHub" },
     { icon: TelegramIcon, href: "https://t.me/edyhvh", label: "Telegram" },
     { icon: XIcon, href: "https://x.com/edyhvh", label: "X" },
-    { icon: SpotifyIcon, label: "Spotify" },
+    {
+      icon: SpotifyIcon,
+      href: "https://open.spotify.com/album/7d5fJGUBbTlQcw2g5KqRSD?si=Z9oJ2gMNShyWc9zPQYhKSg",
+      label: "Spotify",
+    },
     { icon: AppleMusicIcon, label: "Apple Music" },
-    { icon: YouTubeMusicIcon, label: "YouTube Music" },
+    {
+      icon: YouTubeMusicIcon,
+      href: "https://youtube.com/playlist?list=OLAK5uy_k67q5bEF-ZwgZGLwpgQcTCYo_ZdkdmqPU&si=Vdbu144Odvh1Nbe9",
+      label: "YouTube Music",
+    },
   ];
 
   return (

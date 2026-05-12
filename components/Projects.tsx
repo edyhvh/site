@@ -26,6 +26,7 @@ interface Project {
   url?: string;
   githubUrl?: string;
   isWip: boolean;
+  isPrivate?: boolean;
 }
 
 export function Projects() {
@@ -40,23 +41,22 @@ export function Projects() {
       isWip: false,
     },
     {
-      name: "shafan.xyz",
-      description: t.projectDescriptions.shafan,
-      url: "https://shafan.xyz",
-      githubUrl: "https://github.com/edyhvh/shafan",
-      isWip: false,
-    },
-    {
       name: "nave",
       description: t.projectDescriptions.nave,
       githubUrl: "https://github.com/edyhvh/nave",
-      isWip: true,
+      isWip: false,
     },
     {
       name: "qahal",
       description: t.projectDescriptions.qahal,
       githubUrl: "https://github.com/edyhvh/qahal",
       isWip: true,
+    },
+    {
+      name: "(~car no name yet)",
+      description: t.projectDescriptions.car,
+      isWip: true,
+      isPrivate: true,
     },
   ];
 
@@ -85,6 +85,11 @@ export function Projects() {
             {project.isWip && (
               <span className="font-mono italic text-sm text-gray-500">
                 {t.wip}
+              </span>
+            )}
+            {project.isPrivate && (
+              <span className="font-mono italic text-sm text-gray-500">
+                {t.privateLabel}
               </span>
             )}
             {project.githubUrl && (
