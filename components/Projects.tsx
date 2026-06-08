@@ -55,6 +55,7 @@ export function Projects() {
     {
       name: "(~car no name yet)",
       description: t.projectDescriptions.car,
+      url: "https://car-demo.pages.dev",
       isWip: true,
       isPrivate: true,
     },
