@@ -116,9 +116,9 @@ export function Header() {
   const { t } = useLanguage();
 
   const socialLinks: SocialLink[] = [
-    { icon: GithubIcon, href: "https://github.com/edyhvh", label: "GitHub" },
-    { icon: TelegramIcon, href: "https://t.me/edyhvh", label: "Telegram" },
-    { icon: XIcon, href: "https://x.com/edyhvh", label: "X" },
+    { icon: GithubIcon, href: "https://github.com/edyehoshua", label: "GitHub" },
+    { icon: TelegramIcon, href: "https://t.me/edyehoshua", label: "Telegram" },
+    { icon: XIcon, href: "https://x.com/edyehoshua", label: "X" },
     {
       icon: SpotifyIcon,
       href: "https://open.spotify.com/album/7d5fJGUBbTlQcw2g5KqRSD?si=Z9oJ2gMNShyWc9zPQYhKSg",

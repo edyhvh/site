@@ -36,7 +36,7 @@ export function Art() {
       links: [
         {
           label: "GitHub",
-          href: "https://github.com/edyhvh/4s4f",
+          href: "https://github.com/edyehoshua/4s4f",
           icon: GithubIcon,
         },
       ] as ArtLink[],
@@ -48,7 +48,7 @@ export function Art() {
       links: [
         {
           label: "GitHub",
-          href: "https://github.com/edyhvh/shaul",
+          href: "https://github.com/edyehoshua/shaul",
           icon: GithubIcon,
         },
       ] as ArtLink[],

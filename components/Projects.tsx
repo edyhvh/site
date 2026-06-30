@@ -37,19 +37,19 @@ export function Projects() {
       name: "davar.bible",
       description: t.projectDescriptions.davar,
       url: "https://davar.bible",
-      githubUrl: "https://github.com/edyhvh/davar",
+      githubUrl: "https://github.com/edyehoshua/davar",
       isWip: false,
     },
     {
       name: "nave",
       description: t.projectDescriptions.nave,
-      githubUrl: "https://github.com/edyhvh/nave",
+      githubUrl: "https://github.com/edyehoshua/nave",
       isWip: false,
     },
     {
       name: "qahal",
       description: t.projectDescriptions.qahal,
-      githubUrl: "https://github.com/edyhvh/qahal",
+      githubUrl: "https://github.com/edyehoshua/qahal",
       isWip: true,
     },
     {
