@@ -53,6 +53,24 @@ const XIcon = () => (
   </svg>
 );
 
+const LinkedInIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+    <path d="M2 9h4v12H2z" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+);
+
 const SpotifyIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -119,6 +137,11 @@ export function Header() {
     { icon: GithubIcon, href: "https://github.com/edyehoshua", label: "GitHub" },
     { icon: TelegramIcon, href: "https://t.me/edyehoshua", label: "Telegram" },
     { icon: XIcon, href: "https://x.com/edyehoshua", label: "X" },
+    {
+      icon: LinkedInIcon,
+      href: "https://www.linkedin.com/in/jhonny-vergara/",
+      label: "LinkedIn",
+    },
     {
       icon: SpotifyIcon,
       href: "https://open.spotify.com/album/7d5fJGUBbTlQcw2g5KqRSD?si=Z9oJ2gMNShyWc9zPQYhKSg",
