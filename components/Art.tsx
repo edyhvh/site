@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/hooks/useLanguage";
+import { LinkIcon } from "@/components/LinkIcon";
 
 const GithubIcon = () => (
   <svg
@@ -62,13 +63,15 @@ export function Art() {
         {artItems.map((item) => (
           <li key={item.name} className="flex flex-wrap items-center gap-3">
             <span>—</span>
+            <span className="text-black">{item.name}</span>
             <a
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black hover:underline"
+              className="text-black hover:opacity-60 transition-opacity"
+              aria-label={`Open ${item.name}`}
             >
-              {item.name}
+              <LinkIcon />
             </a>
             <span className="text-gray-600">{item.description}</span>
             {item.links.length > 0 && (

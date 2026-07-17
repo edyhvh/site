@@ -1,24 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/hooks/useLanguage';
-
-const LinkIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="16"
-    height="16"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.5"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    aria-hidden="true"
-  >
-    <path d="M10 13a5 5 0 0 0 7.07.07l2-2A5 5 0 0 0 12 4l-1.15 1.15" />
-    <path d="M14 11a5 5 0 0 0-7.07-.07l-2 2A5 5 0 0 0 12 20l1.15-1.15" />
-  </svg>
-);
+import { LinkIcon } from '@/components/LinkIcon';
 
 export function Education() {
   const { t } = useLanguage();
@@ -37,7 +20,8 @@ export function Education() {
             aria-label="Universidad Monteávila — Ciencias Administrativas"
           >
             <LinkIcon />
-          </a>{" "}(2018–2022)
+          </a>{" "}
+          (2018–2022)
         </li>
       </ul>
     </section>

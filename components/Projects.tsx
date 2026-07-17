@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/hooks/useLanguage";
+import { LinkIcon } from "@/components/LinkIcon";
 
 // Inline GitHub icon
 const GithubIcon = () => (
@@ -68,20 +69,18 @@ export function Projects() {
         {projects.map((project) => (
           <li key={project.name} className="flex items-center gap-3">
             <span>—</span>
-            <span className="text-black">
-              {project.url ? (
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline"
-                >
-                  {project.name}
-                </a>
-              ) : (
-                project.name
-              )}
-            </span>
+            <span className="text-black">{project.name}</span>
+            {project.url && (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black hover:opacity-60 transition-opacity"
+                aria-label={`Open ${project.name}`}
+              >
+                <LinkIcon />
+              </a>
+            )}
             <span className="text-gray-600">{project.description}</span>
             {project.isWip && (
               <span className="font-mono italic text-sm text-gray-500">
