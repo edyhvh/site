@@ -53,11 +53,11 @@ export function Projects() {
       isWip: true,
     },
     {
-      name: "(~car no name yet)",
+      name: "car",
       description: t.projectDescriptions.car,
       url: "https://car-demo.pages.dev",
-      isWip: true,
-      isPrivate: true,
+      githubUrl: "https://github.com/edyehoshua/car",
+      isWip: false,
     },
   ];
 
