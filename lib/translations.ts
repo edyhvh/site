@@ -41,7 +41,7 @@ export const translations: Record<Language, Translations> = {
     privateLabel: "private",
   },
   es: {
-    greeting: "hola amigo",
+    greeting: "hello friend",
     projects: "PROYECTOS",
     education: "EDUCACIÓN",
     art: "ARTE",

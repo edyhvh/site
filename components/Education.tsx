@@ -9,7 +9,18 @@ export function Education() {
     <section className="mb-12">
       <h2 className="text-lg font-medium tracking-wide mb-6">{t.education}</h2>
       <ul className="space-y-2">
-        <li className="text-black">— {t.educationItem}</li>
+        <li className="text-black">
+          — {t.educationItem}, {" "}
+          <a
+            href="https://www.uma.edu.ve/ciencias-administrativas/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4 hover:opacity-60 transition-opacity"
+          >
+            Universidad Monteávila
+          </a>{" "}
+          (2018–2022)
+        </li>
       </ul>
     </section>
   );
