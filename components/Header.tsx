@@ -71,6 +71,24 @@ const LinkedInIcon = () => (
   </svg>
 );
 
+const InstagramIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <rect x="3" y="3" width="18" height="18" rx="5" />
+    <circle cx="12" cy="12" r="4" />
+    <circle cx="17.5" cy="6.5" r="0.75" fill="currentColor" stroke="none" />
+  </svg>
+);
+
 const SpotifyIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -141,6 +159,11 @@ export function Header() {
       icon: LinkedInIcon,
       href: "https://www.linkedin.com/in/jhonny-vergara/",
       label: "LinkedIn",
+    },
+    {
+      icon: InstagramIcon,
+      href: "https://www.instagram.com/jhonnyisaacc/",
+      label: "Instagram",
     },
     {
       icon: SpotifyIcon,
