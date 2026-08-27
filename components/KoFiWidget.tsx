@@ -9,7 +9,7 @@ export function KoFiWidget() {
       strategy="lazyOnload"
       onLoad={() => {
         if (typeof window !== 'undefined' && 'kofiWidgetOverlay' in window) {
-          (window as typeof window & { kofiWidgetOverlay: { draw: (username: string, config: object) => void } }).kofiWidgetOverlay.draw('edyehoshua', {
+          (window as typeof window & { kofiWidgetOverlay: { draw: (username: string, config: object) => void } }).kofiWidgetOverlay.draw('jhonnyisaacc', {
             'type': 'floating-chat',
             'floating-chat.donateButton.text': 'Support me',
             'floating-chat.donateButton.background-color': '#00b9fe',
